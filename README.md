@@ -1,1 +1,1 @@
-# faceJam
+# faceJam - a music app
