@@ -21,3 +21,6 @@ Create our Javascript
     for loop of songs via the API
 
 
+    //notes for Saturday: update read me and assign features of the page (picture upload, css table, etc). 
+
+
