@@ -1,0 +1,21 @@
+.spaceJamLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(173, 65, 65);
+    color: white;
+    text-align: center;
+    padding: 10px;
+ 
+ }
+
+
+

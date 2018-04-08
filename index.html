@@ -3,95 +3,88 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <title>FaceJam</title>
+<meta charset="UTF-8">
+<title>FaceJam</title>
 
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <a href="assets/css/style.css"></a>
-  <a href="assets/css/reset.css"></a>
-  <a href="images/spacejam.jpeg"></a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script> -->
 
-  <!-- SoundCloud API -->
-  <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Bootstrap CDN-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!------ this part is the stuff to make the music player work---------->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-
-
-<!-- <audio controls
-	data-info-album-art="http://farm5.staticflickr.com/4050/4353986539_ec89b52698_d.jpg"
-	data-info-album-title="8874"
-	data-info-artist="Billy Murray"
-	data-info-title="Come, take a trip in my air-ship"
-	data-info-label="Edison Gold Moulded Record"
-	data-info-year="1905"
-	data-info-att="University of California, Santa Barbara Library."
-	data-info-att-link="http://cylinders.library.ucsb.edu/search.php?query=8874">
-	<source src="/bootstrap-player/media/cusb-cyl2985d.ogg" type="audio/ogg" />
-	<source src="/bootstrap-player/media/cusb-cyl2985d.mp3" type="audio/mpeg" />
-	<a href="/bootstrap-player/media/cusb-cyl2985d.mp3">cusb_cyl2985d</a>
-</audio> -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </head>
 
 <body>
 
+<img src="assets/images/spacejam.jpg" class="spaceJamLogo" alt="logo">
 
 
-
-<html>
-<head>
-  
-</head>
-<body>
-
-<!----> logo here top center sticky?
 <br>
 
-<!---->upload button here middle float left?
+
+<br>
+    
+
+<div class="container">
+    
+    <div class="row">
+        
+       
+       <div class="col-sm-6">
+        <h1>Upload Pic Here</h1>
+       </div>
+       
+       <div class="col-sm-6">
+            <table class="songTable">
+                <h1>Song Information</h1>
+                    <tr>
+                        <th>Song Title</th>
+                        <td>data1</td>
+                    </tr>
+                    <tr>
+                        <th>Artist</th>
+                        <td>data2</td>
+                    </tr>
+                    <tr>
+                        <th>Release Date</th>
+                        <td>data3</td>
+                    </tr>
+            </table>
+             
+       </div>
+       
+       
+        
+    </div>
+    
+</div>
+
+
 <br>
 
-<!---->table here middle float right?
-<br>
-
-<!---->music player below in a sticky footer?
 
 
-	<br>
-	<div class="col-md-12">
-		<audio id="audio" preload="auto"></audio>
-		<div class="btn-group">
-			<button onclick="Play('music.mp3','audio');" class="btn btn-custom"><span title="Play" id="play" class="glyphicon glyphicon-play aligned"></span></button>
-			<button onclick="Stop('music.mp3','audio');" class="btn btn-custom"><span title="Stop" id="stop" class="glyphicon glyphicon-stop aligned"></span></button>
-			
-			<button onclick="Forward5('music.mp3','audio');" class="btn btn-custom"><span title="+5 seconds" id="play" class="glyphicon glyphicon-fast-forward aligned"></span></button>
-			
-		</div>
-	</div>
+    <footer>
+            <div class="col-md-12">
+                <audio id="audio" preload="auto"></audio>
+                <div class="btn-group">
+                    <img src="assets/images/play.png" id="play" alt="play" height="42" width="42">
+                    <img src="assets/images/stop.png" id="stop" alt="stop" height="42" width="42">
+                    <img src="assets/images/next.png" id="next" alt="next" height="42" width="42">
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
 
-  <!-- <title>Player</title>// soundbar 
-	<meta name="author" content="Maint, FreeShare Inc.">
-	<meta name="description" content="Music player created by Maint(FS Corp)">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="http://freeshared.org/css/bootstrap.css">
-	<link rel="stylesheet" href="http://freeshared.org/css/bootstrap.min.css">
-	<script src="http://freeshared.org/js/jquery.js"></script>
-	<script src="http://freeshared.org/js/bootstrap.js"></script>
-	<script src="http://freeshared.org/js/bootstrap.min.js"></script>
-	<script src="http://freeshared.org/js/npm.js"></script> -->
+
+
 
 
 
