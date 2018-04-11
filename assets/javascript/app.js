@@ -1,12 +1,9 @@
 //Execute this code once the DOM has fully loaded
-$(document).ready(function() {
+// $(document).ready(function() {
 
 // <!--pseudo coded prokect from readme below--> 
 
 //api 
-<<<<<<< HEAD
-// 2QHsXeBIxzksQEMcpY518MaCFUpcbhjy
-=======
 //   var config = {
 //     apiKey: "AIzaSyAZ014zFO7UiMyE4mD1RpAgyeFZIK13X8M",
 //     authDomain: "facejam-7e7f0.firebaseapp.com",
@@ -17,7 +14,6 @@ $(document).ready(function() {
 //   };
 //   firebase.initializeApp(config);
 
->>>>>>> 178d089355e57762575eff60f35649d1dbdec29f
  
 // <!--##Project Description: This project generates a song to match your mood. -->
 
@@ -46,7 +42,7 @@ new AjaxUpload('userImageUpload', {
   }
 });
 
-});
+
 
 
 
@@ -62,7 +58,51 @@ new AjaxUpload('userImageUpload', {
 // <!--The highest scoring emotion will be used as the indicator for song choice -->
 // <!--from the SoundCloud API. -->
 // <!--The song played will be displayed in a table, listing; song title, artist, and release date. -->
+
+
+//temporary array to troubleshoot the next button
+var songArray = ["assets/javascript/captainplanet24.mp3", "assets/javascript/AutumnLeaves_AndreBenjamin.wav", "assets/javascript/KeptSecrets.mp3", "assets/javascript/LittleLandslides.mp3", "assets/javascript/WithYou.mp3" ]
+var currentTrack = 0
+
 // <!--There will also be a sound bar displayed at bottom of the screen to pause, skip, and play.-->
+// HOWEVER in the meantime we will use the captain america code as a place holder
+// JavaScript function that wraps everything
+$(document).ready(function() {
+
+  var captainPlanet = $(".captain-planet");
+
+  // Gets Link for Theme Song
+  var audioElement = document.createElement("audio");
+  audioElement.setAttribute("src", songArray[currentTrack]);
+
+  // Theme Button
+  $("#play").on("click", function() {
+    audioElement.play();
+  })
+
+  $("#stop").on("click", function() {
+    console.log(audioElement.currentTime)
+    audioElement.pause();
+    audioElement.currentTime = 0; ///check documentation to see if STOP is an actual thing
+  })
+
+  $("#next").on("click", function() {
+    currentTrack = currentTrack + 1;
+    console.log(songArray[currentTrack]);
+    audioElement.setAttribute("src", songArray[currentTrack]);
+    audioElement.play();
+console.log(songArray);
+;
+  })
+ 
+
+});
+
+
+
+
+
+
 
 // <!--##Tasks: Create an HTML File and Link Bootstrap, -->
 // <!--jQuery, -->
