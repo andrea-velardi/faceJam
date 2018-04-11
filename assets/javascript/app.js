@@ -1,5 +1,5 @@
 //Execute this code once the DOM has fully loaded
-// $(document).ready(function() {
+$(document).ready(function() {
 
 // <!--pseudo coded prokect from readme below--> 
 
@@ -67,7 +67,7 @@ var currentTrack = 0
 // <!--There will also be a sound bar displayed at bottom of the screen to pause, skip, and play.-->
 // HOWEVER in the meantime we will use the captain america code as a place holder
 // JavaScript function that wraps everything
-$(document).ready(function() {
+// $(document).ready(function() {
 
   var captainPlanet = $(".captain-planet");
 
