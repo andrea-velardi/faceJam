@@ -4,7 +4,20 @@ $(document).ready(function() {
 // <!--pseudo coded prokect from readme below--> 
 
 //api 
+<<<<<<< HEAD
 // 2QHsXeBIxzksQEMcpY518MaCFUpcbhjy
+=======
+//   var config = {
+//     apiKey: "AIzaSyAZ014zFO7UiMyE4mD1RpAgyeFZIK13X8M",
+//     authDomain: "facejam-7e7f0.firebaseapp.com",
+//     databaseURL: "https://facejam-7e7f0.firebaseio.com",
+//     projectId: "facejam-7e7f0",
+//     storageBucket: "facejam-7e7f0.appspot.com",
+//     messagingSenderId: "592333101979"
+//   };
+//   firebase.initializeApp(config);
+
+>>>>>>> 178d089355e57762575eff60f35649d1dbdec29f
  
 // <!--##Project Description: This project generates a song to match your mood. -->
 
@@ -41,10 +54,7 @@ new AjaxUpload('userImageUpload', {
 
 
 
-// <!--pseudo coded prokect from readme below--> 
- 
-// <!--##Project Description: This project generates a song to match your mood. -->
-// <!--The user will upload their own photo via the upload form, using file type valiation. -->
+
 // <!--We use the face recognition API, -->
 // <!--Face++, -->
 // <!--to capture your expression in the photo -->
@@ -63,18 +73,4 @@ new AjaxUpload('userImageUpload', {
 // <!--also adding paramaters to the API results JQuery onclick functions -->
 // <!--if statements -->
 // <!--for loop of songs -->
-// <!--via the API-->
-
-
-// <!-- javascript code below -->
-// SC.initialize({
-//   client_id: 'YOUR_CLIENT_ID',
-//   redirect_uri: 'http://example.com/callback'
-// });
-
-// // initiate auth popup
-// SC.connect().then(function() {
-//   return SC.get('/me');
-// }).then(function(me) {
-//   alert('Hello, ' + me.username);
-// });
+// <!--via the API-->    
