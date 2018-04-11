@@ -4,8 +4,8 @@
     margin-right: auto;
     width: 40%;
 }
-footer {
 
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -14,8 +14,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
- 
  }
+
+
 
 
 
