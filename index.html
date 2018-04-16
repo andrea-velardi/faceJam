@@ -1,97 +1,94 @@
 <!DOCTYPE html>
+<html>
 <html lang="en-us">
 
 <head>
 
-<meta charset="UTF-8">
-<title>FaceJam</title>
-
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script> -->
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-
-</head>
-
-<body>
-
-<img src="assets/images/spacejam.jpg" class="spaceJamLogo" alt="logo">
-
-
-<br>
-
-
-<br>
+    <meta charset="UTF-8">
+    <title>FaceJam</title>
     
-
-<div class="container">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
-    <div class="row">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script> -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+    </style>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    
+    </head>
+    
+    <body>
+
+    <h1>Face Jam</h1>
+    
+    <img src="assets/images/radioface.jpg" class="faceJamLogo" alt="logo">
         
-       
-       <div class="col-sm-6">
-        <h1>Upload Pic Here</h1>
-       </div>
-       
-       <div class="col-sm-6">
-            <table class="songTable">
-                <h1>Song Information</h1>
-                    <tr>
-                        <th>Song Title</th>
-                        <td>data1</td>
-                    </tr>
-                    <tr>
-                        <th>Artist</th>
-                        <td>data2</td>
-                    </tr>
-                    <tr>
-                        <th>Release Date</th>
-                        <td>data3</td>
-                    </tr>
-            </table>
-             
-       </div>
-       
-       
+    
+    <div class="container">
+        
+        <div class="row">
+            
+            
+            <div class="col-sm-6">
+            <h2>Upload Pic Here</h2>
+                <div class="imageUpload">
+                    <label for="example-url-input" class="col-2 col-form-label">Input Image URL Here</label>
+                        <div class="col-10">
+                            <input class="form-control" type="url" value="https://getbootstrap.com" id="userImage">
+                            <input class="btn btn-primary" type="submit" value="Submit" id="submit">
+                        </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6">
+                <table class="songTable">
+                    <h2>Song Information</h2>
+                        <tr>
+                            <th>Song Title</th>
+                            <td id="songTitle"></td>
+                        </tr>
+                        <tr>
+                            <th>Artist</th>
+                            <td id="artist"></td>
+                        </tr>
+                        <tr>
+                            <th>Release Date</th>
+                            <td id="releaseDate"></td>
+                        </tr>
+                </table>
+                    
+            </div>
+            
+            
+            
+        </div>
         
     </div>
     
-</div>
-
-
-<br>
-
-
-
-    <footer>
-            <div class="col-md-12">
-                <audio id="audio" preload="auto"></audio>
-                <div class="btn-group">
-                    <img src="assets/images/play.png" id="play" alt="play" height="42" width="42">
-                    <img src="assets/images/stop.png" id="stop" alt="stop" height="42" width="42">
-                    <img src="assets/images/next.png" id="next" alt="next" height="42" width="42">
+    
+    <br>
+    <!-- ////////////Audio player is here /////////-->
+    
+        <footer>
+                <div class="col-md-12">
+                    <audio id="audio" preload="auto"></audio>
+                    <div class="btn-group">
+                        <img src="assets/images/play.png" id="play" alt="play" height="42" width="42">
+                        <img src="assets/images/stop.png" id="stop" alt="stop" height="42" width="42">
+                        <img src="assets/images/next.png" id="next" alt="next" height="42" width="42">
+                    </div>
                 </div>
-            </div>
-        </footer>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
+            </footer>
+    <!-- /////////////////////////////////////////////// -->
+    </body>
 
 
 
