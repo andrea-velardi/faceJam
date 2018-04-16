@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 //grab the information from the user inputted url
 $("#submit").click(function(userUpload) {
-  userImage = $("#userImage").val(); 
-  console.log(userImage); 
+  picValue = $("#userImage").val(); 
+  console.log(picValue); 
 });
 
 
