@@ -5,17 +5,21 @@
 <head>
 
     <meta charset="UTF-8">
+    
     <title>FaceJam</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <!-- <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script> -->
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <style>
             @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
@@ -27,9 +31,31 @@
     
     <body>
 
-    <h1 class="billBoard">Face Jam</h1>
+    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <!Modal -->
+            <!-- <div class="modalFade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!Modal content-->
+                    <!-- <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Quick Tip!</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <p>The image url needs to end with .jpg .jpeg .gif .png or .tiff</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
     
-    <img src="assets/images/radioface.jpg" class="faceJamLogo" alt="logo">
+    <h1 class="billBoard">FaceJam</h1>
+    
+    <!-- <img src="assets/images/radioface.png" class="faceJamLogo" alt="logo"> -->
         
     
     <div class="container">
@@ -45,6 +71,9 @@
                             <input class="form-control" type="url" value="https://getbootstrap.com" id="userImage">
                             <br>
                             <input class="btn btn-primary" type="submit" value="Submit" id="submit">
+                            <br>
+                            <img id="dummyHead" src="assets/images/dummyhead.jpeg" alt="dummyHead"
+                                width="75%" height="75%">
                         </div>
                 </div>
             </div>
@@ -76,20 +105,23 @@
     
     
     <br>
+    <br>
+    <br>
+    <br>
     <!-- ////////////Audio player is here /////////-->
     
         <footer>
                 <div class="col-md-12">
                     <audio id="audio" preload="auto"></audio>
                     <div class="btn-group">
-                        <img src="assets/images/play.png" id="play" alt="play" height="42" width="42">
-                        <img src="assets/images/stop.png" id="stop" alt="stop" height="42" width="42">
-                        <img src="assets/images/next.png" id="next" alt="next" height="42" width="42">
+                        <img src="assets/images/play.png" id="play" alt="play" height="15%" width="15%">
+                        <img src="assets/images/stop.png" id="stop" alt="stop" height="15%" width="15%">
+                        <!-- < <img src="assets/images/next.png" id="next" alt="next" height="42" width="42"> turn back on if playlist feature is implemented-->
                     </div>
                 </div>
-            </footer>
-    <!-- /////////////////////////////////////////////// -->
+        <footer> 
     </body>
+</html>
 
 
 
