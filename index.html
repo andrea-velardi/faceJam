@@ -31,27 +31,25 @@
     
     <body>
 
-    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <!Modal -->
-            <!-- <div class="modalFade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-                    <!Modal content-->
-                    <!-- <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Quick Tip!</h4>
-                        </div>
+    <div class="modalFade hidden" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Quick Tip!</h4>
+                </div>
 
-                        <div class="modal-body">
-                            <p>The image url needs to end with .jpg .jpeg .gif .png or .tiff</p>
-                        </div>
+                <div class="modal-body">
+                    <p>The image url needs to end with .jpg .jpeg .gif .png or .tiff</p>
+                </div>
 
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div> -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <h1 class="billBoard">FaceJam</h1>
     
@@ -94,6 +92,12 @@
                             <td id="releaseDate"></td>
                         </tr>
                 </table>
+                <br>
+                <br>
+                <h2>Happiness Meter!</h2>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
                     
             </div>
             
